@@ -11,11 +11,12 @@ const Product = ({ product, handlerAddToCart }) => {
         </h2>
         <p>{product.description}</p>
       </section>
-      <button type="button" onClick={handlerAddToCart}>
+      <button type="button" onClick={() => handlerAddToCart(product)}>
         Comprar
       </button>
     </article>
   );
+  0;
 };
 
 export default Product;
