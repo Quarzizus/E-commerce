@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import AppContext from "../context/AppContext";
 import { Link } from "react-router-dom";
-import "../containers/styles/Header.css";
+import "./styles/Header.css";
 
 const Header = () => {
   const {

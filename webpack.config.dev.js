@@ -1,9 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -16,7 +13,7 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"],
   },
-  mode: "production",
+  mode: "development",
   module: {
     rules: [
       // rules js,jsx
@@ -60,6 +57,12 @@ module.exports = {
       },
     ],
   },
+  // important for react.router
+  devServer: {
+    historyApiFallback: true,
+    port: 8080,
+    open: true,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
@@ -69,10 +72,5 @@ module.exports = {
       // any file into assets with extensions .css
       filename: "[name].css",
     }),
-    new CleanWebpackPlugin(),
   ],
-  optimization: {
-    minimize: true,
-    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
-  },
 };
