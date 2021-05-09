@@ -8,7 +8,7 @@ import Payment from "../containers/Payment";
 import Success from "../containers/Success";
 import NotFound from "../containers/NotFound";
 import Layout from "../components/Layout";
-import "../containers/styles/App.css";
+import "../containers/styles/App.scss";
 
 const App = () => {
   return (

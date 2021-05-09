@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from "react";
 import AppContext from "../context/AppContext";
 import { Link } from "react-router-dom";
-import "../containers/styles/Info.css";
+import "./styles/Info.scss";
 
 const Info = ({ history }) => {
   const { state, addToBuyer } = useContext(AppContext);

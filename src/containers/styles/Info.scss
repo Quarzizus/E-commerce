@@ -4,11 +4,29 @@
   grid-row-gap: 1.5em;
   display: grid;
   margin: 0 0 4em 0;
-}
-.Info-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  input {
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    color: rgba(0, 0, 0, 0.75);
+    display: inline-block;
+    font-feature-settings: "tnum";
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    list-style: none;
+    margin: 0 0 8px 0;
+    outline: 0;
+    padding: 4px 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .Info-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .Info-item .fas {
@@ -39,24 +57,6 @@ h3 {
   font-size: 18px;
   margin: 0 0 8px 0;
   padding: 0;
-}
-input {
-  background-color: #fff;
-  background-image: none;
-  border-radius: 4px;
-  border: 1px solid #d9d9d9;
-  color: rgba(0, 0, 0, 0.75);
-  display: inline-block;
-  font-feature-settings: "tnum";
-  font-size: 14px;
-  height: 32px;
-  line-height: 32px;
-  list-style: none;
-  margin: 0 0 8px 0;
-  outline: 0;
-  padding: 4px 12px;
-  width: 100%;
-  box-sizing: border-box;
 }
 .Info-buttons {
   display: flex;

@@ -1,7 +1,7 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 import MapViewer from "../components/MapViewer";
 import AppContext from "../context/AppContext";
-import "../containers/styles/Success.css";
+import "./styles/Success.scss";
 
 const Success = () => {
   const { state } = useContext(AppContext);
@@ -9,7 +9,7 @@ const Success = () => {
   return (
     <div className="Success">
       <div className="Success-content">
-        <h2>{`${buyer.name}, Gracias por tu compra :3`}</h2>
+        <h2>{`${buyer[0].name}, Gracias por tu compra :3`}</h2>
         <span>Tu pedido llegará en 3 días a tu dirección</span>
         <section className="Success-map">
           <MapViewer />

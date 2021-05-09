@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import AppContext from "../context/AppContext";
 import { Link } from "react-router-dom";
-import "../containers/styles/Checkout.css";
+import "./styles/Checkout.scss";
 
 const Checkout = () => {
-  const { removeToCart, state, index } = useContext(AppContext);
+  const { removeToCart, state } = useContext(AppContext);
   const { cart } = state;
 
   const handleRemove = (product) => () => {
