@@ -16,7 +16,7 @@ const Info = ({ history }) => {
       address: formData.get("address"),
       apto: formData.get("apto"),
       city: formData.get("city"),
-      country: formData.get("county"),
+      country: formData.get("country"),
       state: formData.get("state"),
       cp: formData.get("cp"),
       phone: formData.get("phone"),
@@ -35,7 +35,7 @@ const Info = ({ history }) => {
           <form ref={form}>
             <input type="text" placeholder="Nombre completo" name="name" />
             <input type="email" placeholder="Correo eletronico" name="email" />
-            <input type="text" placeholder="Dirección" name="adsress" />
+            <input type="text" placeholder="Dirección" name="address" />
             <input type="text" placeholder="Apto" name="apto" />
             <input type="text" placeholder="Ciudad" name="city" />
             <input type="text" placeholder="Pais" name="country" />

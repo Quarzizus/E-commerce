@@ -1,11 +1,12 @@
 import React from "react";
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
+import IconPosition from "./IconPosition";
 import "leaflet/dist/leaflet.css";
 
-const MapViewer = () => {
+const MapViewer = ({ data }) => {
   const center = {
-    lat: "6.162112",
-    lng: "-75.646975",
+    lat: data.latitude,
+    lng: data.longitude,
   };
   return (
     <MapContainer zoom={13} center={center}>
@@ -13,6 +14,7 @@ const MapViewer = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
+      <Marker position={center} icon={IconPosition} />
     </MapContainer>
   );
 };
