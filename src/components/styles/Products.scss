@@ -17,8 +17,8 @@
     border-radius: 5px 5px 0 0;
     object-fit: contain;
   }
-  .Products-item-info {
-    padding: 10px;
+  .Product-item-info {
+    padding: 15px;
     h2 {
       font-size: 18px;
       font-weight: bold;
@@ -34,7 +34,7 @@
     }
   }
   button {
-    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+    background: dodgerblue;
     width: 100%;
     padding: 10px;
     border-radius: 0px 0px 5px 5px;
@@ -42,9 +42,10 @@
     outline: 0;
     cursor: pointer;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: bold;
+    color: white;
   }
   button:hover {
-    background-color: rgba(39, 44, 49, 0.06);
+    background-color: rgb(19, 134, 248);
   }
 }

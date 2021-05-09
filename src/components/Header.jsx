@@ -10,15 +10,17 @@ const Header = () => {
 
   return (
     <header className="Header">
-      <Link to="/">
-        <h1 className="Header_title">PlatziConf Merch</h1>
+      <Link to="/" className="Link_header-title">
+        <h1 className="Header_title">E-PlatziCommerce</h1>
       </Link>
-      <button className="Header_checkout" type="button">
-        <Link to="/checkout">
-          <i className="fas fa-shopping-basket" />
-        </Link>
-      </button>
-      {cart.length > 0 && <div className="Header-alert">{cart.length}</div>}
+      <div className="Header_container-checkout">
+        <button className="Header_checkout" type="button">
+          <Link to="/checkout" className="Link_header-buy">
+            <i className="fas fa-shopping-basket" />
+          </Link>
+        </button>
+        {cart.length > 0 && <div className="Header-alert">{cart.length}</div>}
+      </div>
     </header>
   );
 };

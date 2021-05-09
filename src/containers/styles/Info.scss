@@ -26,6 +26,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .Button-pagar {
+      width: 40%;
+      border: none;
+      border-radius: none;
+      background-color: dodgerblue;
+      height: 35px;
+      cursor: pointer;
+      color: white;
+    }
+    .Info-buttons-link {
+      width: 40%;
+      .Info-back {
+        width: 100%;
+        border: none;
+        border-radius: none;
+        height: 35px;
+        background-color: #d9d9d9;
+        cursor: pointer;
+      }
+    }
+    // .Button-pagar {
+    //   cursor: pointer;
+    //   background-color: #ccc7c7;
+    //   color: black;
+    // }
   }
 }
 
@@ -57,17 +82,4 @@ h3 {
   font-size: 18px;
   margin: 0 0 8px 0;
   padding: 0;
-}
-.Info-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.Info button {
-  width: 40%;
-  background-color: rgb(248, 248, 247);
-  border: none;
-  border-radius: 0%;
-  padding: 10px 8px;
-  color: rgb(33, 33, 122);
 }

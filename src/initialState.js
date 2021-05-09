@@ -1,6 +1,12 @@
 export default {
   cart: [],
-  buyer: [],
+  buyer: [
+    {
+      name: "Nombre",
+      email: "nombre@correo.com",
+      phone: 1234567890,
+    },
+  ],
   orders: [],
   products: [
     {

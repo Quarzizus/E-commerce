@@ -2,20 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .Header_checkout {
+  .Link-header-title {
+    .Header_title {
+      color: dodgerblue;
+    }
+  }
+  .Header_container-checkout {
     display: flex;
-    height: 40%;
     align-items: center;
-    justify-content: center;
-    width: 30px;
-  }
-  .Header-alert {
-    color: #33b13a;
-    font-size: 14px;
-    margin-left: 5px;
-  }
-  Link {
-    text-decoration: none;
-    color: #33b1ff;
+    .Header_checkout {
+      display: flex;
+      height: 40%;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      .Link_header-buy {
+        i {
+          color: dodgerblue;
+        }
+      }
+    }
+    .Header-alert {
+      color: #33b13a;
+      font-size: 14px;
+      margin-left: 5px;
+    }
   }
 }

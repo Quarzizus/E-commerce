@@ -9,7 +9,8 @@ const Success = () => {
   return (
     <div className="Success">
       <div className="Success-content">
-        <h2>{`${buyer[0].name}, Gracias por tu compra :3`}</h2>
+        <h2>{`${buyer[buyer.length - 1].name}, Gracias por tu compra :3`}</h2>
+        {console.log(buyer[buyer.length - 1])}
         <span>Tu pedido llegará en 3 días a tu dirección</span>
         <section className="Success-map">
           <MapViewer />

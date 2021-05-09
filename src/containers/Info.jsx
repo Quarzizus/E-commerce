@@ -13,7 +13,7 @@ const Info = ({ history }) => {
     const buyer = {
       name: formData.get("name"),
       email: formData.get("email"),
-      address: formData.get("address"),
+      phone: formData.get("phone"),
     };
     addToBuyer(buyer);
     history.push("/checkout/payment");
@@ -33,9 +33,11 @@ const Info = ({ history }) => {
           </form>
         </div>
         <div className="Info-buttons">
-          <button className="Info-back" type="button">
-            <Link to="/checkout">Regresar</Link>
-          </button>
+          <Link to="/checkout" className="Info-buttons-link">
+            <button className="Info-back" type="button">
+              Regresar
+            </button>
+          </Link>
           <button type="button" className="Button-pagar" onClick={handleSubmit}>
             Pagar
           </button>
