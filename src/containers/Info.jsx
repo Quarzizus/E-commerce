@@ -14,12 +14,6 @@ const Info = ({ history }) => {
       name: formData.get("name"),
       email: formData.get("email"),
       address: formData.get("address"),
-      apto: formData.get("apto"),
-      city: formData.get("city"),
-      country: formData.get("country"),
-      state: formData.get("state"),
-      cp: formData.get("cp"),
-      phone: formData.get("phone"),
     };
     addToBuyer(buyer);
     history.push("/checkout/payment");
@@ -35,12 +29,6 @@ const Info = ({ history }) => {
           <form ref={form}>
             <input type="text" placeholder="Nombre completo" name="name" />
             <input type="email" placeholder="Correo eletronico" name="email" />
-            <input type="text" placeholder="Dirección" name="address" />
-            <input type="text" placeholder="Apto" name="apto" />
-            <input type="text" placeholder="Ciudad" name="city" />
-            <input type="text" placeholder="Pais" name="country" />
-            <input type="text" placeholder="Estado" name="state" />
-            <input type="text" placeholder="Codigo postal" name="cp" />
             <input type="tel" placeholder="Telefono" name="phone" />
           </form>
         </div>
@@ -48,11 +36,9 @@ const Info = ({ history }) => {
           <button className="Info-back" type="button">
             <Link to="/checkout">Regresar</Link>
           </button>
-          <div className="Info-next" type="button">
-            <button type="button" onClick={handleSubmit}>
-              Pagar
-            </button>
-          </div>
+          <button type="button" className="Button-pagar" onClick={handleSubmit}>
+            Pagar
+          </button>
         </div>
       </section>
       <article className="Info-sidebar">

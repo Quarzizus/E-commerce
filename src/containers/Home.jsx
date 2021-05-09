@@ -5,7 +5,6 @@ import Products from "../components/Products";
 const Home = () => {
   return (
     <>
-      <h1>Holi Home</h1>
       <Products products={initialState.products} />
     </>
   );

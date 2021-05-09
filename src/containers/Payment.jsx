@@ -26,7 +26,6 @@ const Payment = ({ history }) => {
   };
 
   const handlePaymentSuccess = (data) => {
-    console.log(data);
     if (data.status === "COMPLETED") {
       const newOrder = {
         buyer: buyer,
@@ -34,9 +33,8 @@ const Payment = ({ history }) => {
         payment: data,
       };
       addNewOrder(newOrder);
-      console.log(newOrder);
     }
-    history.push("/checkout/payment/success");
+    history.push("/checkout/success");
   };
 
   return (
