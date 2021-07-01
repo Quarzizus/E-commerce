@@ -1,9 +1,14 @@
-# Tyni-e-commerce
-Practice with React Hook, PayPayl API and Leaflet (geolocalization)
+# E-commerce
+This project is set in Platzi, (they are a start-up of e-learning) in which you will be able to buy merchandising and pay with Paypal. Also, it has geolocalización for getting easier the address. It is built with React and leaflet for the maps.
 
-## ACCOUNT PAYPAL SANDBOX 
 
-mail: sb-je6pu6146961@personal.example.com
-password: Uxdo7"r&
+## Account Paypal Sandbox 
 
-Page: -> https://e-platzicommerce.web.app/
+Email: sb-je6pu6146961@personal.example.com
+
+Password: Uxdo7"r&
+
+
+## Page 
+
+https://e-platzicommerce.web.app/
