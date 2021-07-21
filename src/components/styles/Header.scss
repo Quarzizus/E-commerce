@@ -4,7 +4,7 @@
   align-items: center;
   .Link-header-title {
     .Header_title {
-      color: dodgerblue;
+      color: blue;
     }
   }
   .Header_container-checkout {
@@ -16,9 +16,13 @@
       align-items: center;
       justify-content: center;
       width: 30px;
+      background-color: rgb(221, 214, 214);
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
       .Link_header-buy {
         i {
-          color: dodgerblue;
+          color: blue;
         }
       }
     }

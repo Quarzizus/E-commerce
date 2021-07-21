@@ -16,7 +16,6 @@ const Product = ({ product, handlerAddToCart }) => {
       </button>
     </article>
   );
-  0;
 };
 
 export default Product;

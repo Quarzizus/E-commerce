@@ -20,9 +20,10 @@ const Checkout = () => {
     <section className="Checkout">
       <section className="Checkout-content">
         {cart.length > 0 ? <h3>Lista de pedidos:</h3> : <h3>Sin pedidos</h3>}
-        {cart.map((product) => {
+        {cart.map((product, index) => {
           return (
-            <article className="Checkout-item" key={product.id}>
+            <article className="Checkout-item" key={index}>
+              {console.log(product.id, index)}
               <div className="Checkout-element">
                 <h4>{product.title}</h4>
                 <span>{`$ ${product.price}`}</span>

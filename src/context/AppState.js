@@ -14,7 +14,9 @@ const AppState = ({ children }) => {
   const removeToCart = (payload) => {
     setState({
       ...state,
-      cart: state.cart.filter((items) => items.id != payload.id),
+      cart: state.cart.filter((items, index) =>
+        !state.cart.length == 1 ? index != state.cart.indexOf(payload) : index
+      ),
     });
   };
 

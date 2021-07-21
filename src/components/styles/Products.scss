@@ -1,5 +1,5 @@
 .Products-items {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;
@@ -34,7 +34,7 @@
     }
   }
   button {
-    background: dodgerblue;
+    background: blue;
     width: 100%;
     padding: 10px;
     border-radius: 0px 0px 5px 5px;

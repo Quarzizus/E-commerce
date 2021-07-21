@@ -4,7 +4,11 @@
   grid-row-gap: 1.5em;
   display: grid;
   padding: 0 0 4em 0;
-
+  .Checkout-content {
+    h3 {
+      color: #33b13a;
+    }
+  }
   .Checkout-item {
     display: flex;
     justify-content: space-between;
@@ -16,7 +20,7 @@
       align-items: center;
       width: 100%;
       border-bottom: 1px solid #eee;
-      h4 {
+      h3 {
         margin: 0;
       }
     }
@@ -33,7 +37,7 @@
     }
   }
   .Checkout-sidebar button {
-    background-color: dodgerblue;
+    background-color: blue;
     border-radius: none;
     border: none;
     display: inline-block;

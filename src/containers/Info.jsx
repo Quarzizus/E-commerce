@@ -27,9 +27,24 @@ const Info = ({ history }) => {
         </div>
         <div className="Info-form">
           <form ref={form}>
-            <input type="text" placeholder="Nombre completo" name="name" />
-            <input type="email" placeholder="Correo eletronico" name="email" />
-            <input type="tel" placeholder="Telefono" name="phone" />
+            <input
+              type="text"
+              placeholder="Nombre completo"
+              name="name"
+              autoComplete="off"
+            />
+            <input
+              type="email"
+              placeholder="Correo eletronico"
+              name="email"
+              autoComplete="off"
+            />
+            <input
+              type="tel"
+              placeholder="Telefono"
+              name="phone"
+              autoComplete="off"
+            />
           </form>
         </div>
         <div className="Info-buttons">
@@ -45,16 +60,14 @@ const Info = ({ history }) => {
       </section>
       <article className="Info-sidebar">
         <h3>Pedido</h3>
-        {cart.map((product) => {
-          return (
-            <div className="Info-item" key={product.id}>
-              <div className="Info-element">
-                <h4>{product.title}</h4>
-                <span>{product.price}</span>
-              </div>
+        {cart.map((product, index) => (
+          <div className="Info-item" key={index}>
+            <div className="Info-element">
+              <h4>{product.title}</h4>
+              <span>{product.price}</span>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </article>
     </section>
   );
