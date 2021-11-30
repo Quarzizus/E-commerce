@@ -1,11 +1,13 @@
 {
-  "name": "Project-Hooks",
+  "name": "project-hooks",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve  --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.js"
+    "dev": "webpack serve  --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "Miguel Vasquez <angelzizu06@gmail.com>",
@@ -24,14 +26,17 @@
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.14.0",
     "@babel/preset-react": "^7.13.13",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.4",
     "css-minimizer-webpack-plugin": "^2.0.0",
+    "enzyme": "^3.11.0",
     "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "husky": "^6.0.0",
+    "jest": "^27.3.1",
     "mini-css-extract-plugin": "^1.6.0",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1",
@@ -46,5 +51,14 @@
       "pre-commit": "npm test",
       "pre-push": "npm test"
     }
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__test__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(sass|css|scss)$": "<rootDir>/src/__mocks__/styleMock.js"
+    },
+    "testEnvironment": "jsdom"
   }
 }
